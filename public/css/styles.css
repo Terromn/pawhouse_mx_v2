@@ -1,0 +1,229 @@
+/* setup */
+
+:root {
+  --dark-blue: #2e3440;
+  --light-blue: #5e81ac;
+  --teal: #88c0d0;
+
+  --white: #eceff4;
+}
+
+/* Usual tags */
+body {
+  padding: 0;
+  margin: 0;
+
+  background-color: var(--dark-blue);
+  color: var(--white);
+
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 5.25rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 3.25rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+/* Utility Classes */
+.text-invert-color {
+  color: black;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.w100vh {
+  width: 100vw;
+}
+
+.h-100pct {
+  height: 100%;
+}
+
+.h-90pct {
+  height: 90%;
+}
+
+.h-80pct {
+  height: 80%;
+}
+
+.h-70pct {
+  height: 70%;
+}
+
+.h-60pct {
+  height: 60%;
+}
+
+.h-50pct {
+  height: 50%;
+}
+
+.h-40pct {
+  height: 40%;
+}
+
+.h-30pct {
+  height: 30%;
+}
+
+.h-20pct {
+  height: 20%;
+}
+
+.h-10pct {
+  height: 10%;
+}
+
+.w-100pct {
+  width: 100%;
+}
+
+.w-90pct {
+  width: 90%;
+}
+
+.w-80pct {
+  width: 80%;
+}
+
+.w-70pct {
+  width: 70%;
+}
+
+.w-60pct {
+  width: 60%;
+}
+
+.w-50pct {
+  width: 50%;
+}
+
+.w-40pct {
+  width: 40%;
+}
+
+.w-30pct {
+  width: 30%;
+}
+
+.w-20pct {
+  width: 20%;
+}
+
+.w-10pct {
+  width: 10%;
+}
+
+.h-equalize {
+  height: auto;
+}
+
+/* Tenzorial UI Classes */
+
+/* Backgrounds */
+.te-bg-white {
+  background-color: var(--white);
+}
+
+.te-bg-dark-blue {
+  background-color: var(--dark-blue);
+}
+
+.te-bg-light-blue {
+  background-color: var(--light-blue);
+}
+
+.te-bg-teal {
+  background-color: var(--teal);
+}
+
+.te-bg-gradient-lightblue-darkblue {
+  background: linear-gradient(to bottom, var(--dark-blue), var(--light-blue));
+}
+
+
+/* Buttons */
+.te-btn-cta-reserve {
+  padding: 8px 42px;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: bold;
+  border-radius: 40px;
+  border: none;
+  background: linear-gradient(to left bottom, var(--teal), var(--light-blue));
+  transition: all 300ms;
+}
+
+.te-btn-cta-reserve:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px -4px var(--teal);
+}
+
+/* Hovers */
+.te-shadow-hover-white {
+  transition: all 300ms;
+}
+
+.te-shadow-hover-white:hover {
+  box-shadow: 0 0 100px -20px var(--white);
+  transform: translateY(-15px);
+}
+
+/* Misc */
+.te-img-cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

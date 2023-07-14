@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pawhouse</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <section class="navigation-bar position-fixed w-100">
+      <div class="container h-100">
+        <div class="d-flex justify-content-between align-items-center h-100">
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="assets/logo.png" class="pe-3" />
+            <p style="margin-bottom: 0" class="d-none d-md-block">
+              PAWHOUSE.MX
+            </p>
+          </div>
+          <div class="d-block d-md-none">
+
+          </svg>
+          <svg id="hamIco" class="ham hamRotate ham8" viewBox="0 0 100 100" width="80" onclick="toggleMenu();">
+            <path
+                  class="line top"
+                  d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+            <path
+                  class="line middle"
+                  d="m 30,50 h 40" />
+            <path
+                  class="line bottom"
+                  d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+          </svg>
+          </div>
+          <div
+            class="d-none d-md-flex align-items-center justify-content-around gap-5"
+          >
+            <a href="#landing-section">INICO</a>
+            <a href="#story-section">PORQUE</a>
+            <a href="#photos-section">FOTOS</a>
+            <a href="#reviews-section">RESEÑAS</a>
+            <a href="https://wa.me/message/WX4EH2BWFLXZK1">
+              <button class="te-btn-cta-reserve my-4">RESERVAR</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="mobileMenu" style="display: none;">
+      <div  class="w-100 h-100 te-bg-dark-blue position-fixed" style="z-index: 100000;">
+          <div class="d-flex h-100 flex-column align-items-center justify-content-center gap-4">
+            <a href="#landing-section">INICIO</a>
+            <a href="#story-section">PORQUE</a>
+            <a href="#photos-section">FOTOS</a>
+            <a href="#reviews-section">RESEÑAS</a>
+            <a href="https://wa.me/message/WX4EH2BWFLXZK1">
+              <button class="te-btn-cta-reserve my-4">RESERVAR</button>
+            </a>
+          </div>
+      </div>
+    </div>
+
+    <section
+      id="landing-section"
+      class="te-img-cover"
+      style="background-image: url(assets/dog-photos/014.png)"
+    >
+      <div
+        class="container d-flex flex-column align-items-center align-items-md-start justify-content-center h-100vh"
+      >
+        <h3>El mejor</h3>
+        <h1 class="text-center text-md-start">
+          Hotel para
+          <br />
+          tu hermoso amigo
+          <br />
+          peludo
+        </h1>
+        <a href="https://wa.me/message/WX4EH2BWFLXZK1">
+          <button class="te-btn-cta-reserve my-4">RESERVAR</button>
+        </a>
+      </div>
+    </section>
+
+    <div class="te-bg-gradient-lightblue-darkblue">
+      <section id="story-section">
+        <div class="container py-5">
+          <div class="row">
+            <div
+              class="col-12 col-md-6 d-flex flex-column align-items-start justify-content-center"
+            >
+              <h1 class="my-4 text-center text-md-start w-100">¿Porque?</h1>
+              <div
+                class="my-4 d-flex d-md-none w-100 justify-content-center align-items-center"
+              >
+                <div class="w-60pct te-bg-white te-shadow-hover-white">
+                  <a href="https://www.instagram.com/pawhouse.mx/">
+                    <div
+                      class="ps-3 pe-3 pt-3 ps-md-4 pe-md-4 pt-md-4 d-flex flex-column"
+                    >
+                      <div
+                        class="te-img-cover w-100 h-equalize"
+                        style="
+                          background-image: url(assets/instagram-posts/meetOwner.png);
+                        "
+                      ></div>
+                      <div
+                        class="d-flex justify-content-between align-items-center py-3"
+                      >
+                        <span
+                          class="material-symbols-outlined text-invert-color"
+                          style="font-size: 32px"
+                        >
+                          favorite
+                        </span>
+                        <span
+                          class="material-symbols-outlined text-invert-color"
+                          style="font-size: 32px"
+                        >
+                          send
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <p class="text-center text-md-start">
+                ¡Hola! Soy Neil, el dueño de Pawhouse.mx
+                <br />
+                Inicie este proyecto porque me parece horrible que dejar a tu
+                perrito en una veterinaria implique que lo mantengan en jaulas.
+                ¡Ellos también se desesperan y tienen sentimientos!
+              </p>
+              <br />
+              <br />
+              <p class="text-center text-md-start">
+                Por eso es que Pawhouse.mx nació, en este hotel no estarán
+                encerrados en jaulas pues se podrán divertir mientras hacen
+                otros amigos perrunos. Brindaremos cariño y procuraremos el
+                bienestar de su amigo peludo.
+              </p>
+            </div>
+            <div
+              class="d-none col-12 col-md-6 d-md-flex flex-column align-items-center justify-content-center"
+            >
+              <div class="w-60pct te-bg-white te-shadow-hover-white">
+                <a href="https://www.instagram.com/pawhouse.mx/">
+                  <div
+                    class="ps-3 pe-3 pt-3 ps-md-4 pe-md-4 pt-md-4 d-flex flex-column"
+                  >
+                    <div
+                      class="te-img-cover w-100 h-equalize"
+                      style="
+                        background-image: url(assets/instagram-posts/meetOwner.png);
+                      "
+                    ></div>
+                    <div
+                      class="d-flex justify-content-between align-items-center py-3"
+                    >
+                      <span
+                        class="material-symbols-outlined text-invert-color"
+                        style="font-size: 32px"
+                      >
+                        favorite
+                      </span>
+                      <span
+                        class="material-symbols-outlined text-invert-color"
+                        style="font-size: 32px"
+                      >
+                        send
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="photos-section">
+        <h1 class="text-center p-5">FOTOS</h1>
+        <div class="scrollable-container" id="scrollable-container">
+          <div class="d-flex gap-1 gap-md-4">
+            <div class="grid-container" id="grid-container">
+              <div
+                class="te-img-cover tall-img wide-img"
+                style="background-image: url(assets/dog-photos/005.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/006.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/001.png)"
+              ></div>
+
+              <div
+                class="te-img-cover tall-img"
+                style="background-image: url(assets/dog-photos/004.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/002.png)"
+              ></div>
+              <div
+                class="te-img-cover tall-img"
+                style="background-image: url(assets/dog-photos/012.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/009.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/013.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/011.png)"
+              ></div>
+
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/010.png)"
+              ></div>
+            </div>
+            <div class="grid-container" id="grid-container">
+              <div
+                class="te-img-cover tall-img wide-img"
+                style="background-image: url(assets/dog-photos/005.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/006.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/001.png)"
+              ></div>
+
+              <div
+                class="te-img-cover tall-img"
+                style="background-image: url(assets/dog-photos/004.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/002.png)"
+              ></div>
+              <div
+                class="te-img-cover tall-img"
+                style="background-image: url(assets/dog-photos/012.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/009.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/013.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/011.png)"
+              ></div>
+
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/010.png)"
+              ></div>
+            </div>
+            <div class="grid-container" id="grid-container">
+              <div
+                class="te-img-cover tall-img wide-img"
+                style="background-image: url(assets/dog-photos/005.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/006.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/001.png)"
+              ></div>
+
+              <div
+                class="te-img-cover tall-img"
+                style="background-image: url(assets/dog-photos/004.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/002.png)"
+              ></div>
+              <div
+                class="te-img-cover tall-img"
+                style="background-image: url(assets/dog-photos/012.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/009.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/013.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/011.png)"
+              ></div>
+
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/010.png)"
+              ></div>
+            </div>
+            <div class="grid-container" id="grid-container">
+              <div
+                class="te-img-cover tall-img wide-img"
+                style="background-image: url(assets/dog-photos/005.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/006.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/001.png)"
+              ></div>
+
+              <div
+                class="te-img-cover tall-img"
+                style="background-image: url(assets/dog-photos/004.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/002.png)"
+              ></div>
+              <div
+                class="te-img-cover tall-img"
+                style="background-image: url(assets/dog-photos/012.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/009.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/013.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/011.png)"
+              ></div>
+
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/010.png)"
+              ></div>
+            </div>
+            <div class="grid-container" id="grid-container">
+              <div
+                class="te-img-cover tall-img wide-img"
+                style="background-image: url(assets/dog-photos/005.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/006.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/001.png)"
+              ></div>
+
+              <div
+                class="te-img-cover tall-img"
+                style="background-image: url(assets/dog-photos/004.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/002.png)"
+              ></div>
+              <div
+                class="te-img-cover tall-img"
+                style="background-image: url(assets/dog-photos/012.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/009.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/013.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/011.png)"
+              ></div>
+
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/010.png)"
+              ></div>
+            </div>
+            <div class="grid-container" id="grid-container">
+              <div
+                class="te-img-cover tall-img wide-img"
+                style="background-image: url(assets/dog-photos/005.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/006.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/001.png)"
+              ></div>
+
+              <div
+                class="te-img-cover tall-img"
+                style="background-image: url(assets/dog-photos/004.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/002.png)"
+              ></div>
+              <div
+                class="te-img-cover tall-img"
+                style="background-image: url(assets/dog-photos/012.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/009.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/013.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/011.png)"
+              ></div>
+
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/010.png)"
+              ></div>
+            </div>
+            <div class="grid-container" id="grid-container">
+              <div
+                class="te-img-cover tall-img wide-img"
+                style="background-image: url(assets/dog-photos/005.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/006.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/001.png)"
+              ></div>
+
+              <div
+                class="te-img-cover tall-img"
+                style="background-image: url(assets/dog-photos/004.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/002.png)"
+              ></div>
+              <div
+                class="te-img-cover tall-img"
+                style="background-image: url(assets/dog-photos/012.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/009.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/013.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/011.png)"
+              ></div>
+
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/010.png)"
+              ></div>
+            </div>
+            <div class="grid-container" id="grid-container">
+              <div
+                class="te-img-cover tall-img wide-img"
+                style="background-image: url(assets/dog-photos/005.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/006.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/001.png)"
+              ></div>
+
+              <div
+                class="te-img-cover tall-img"
+                style="background-image: url(assets/dog-photos/004.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/002.png)"
+              ></div>
+              <div
+                class="te-img-cover tall-img"
+                style="background-image: url(assets/dog-photos/012.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/009.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/013.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/011.png)"
+              ></div>
+
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/010.png)"
+              ></div>
+            </div>
+
+            <div class="grid-container" id="grid-container">
+              <div
+                class="te-img-cover tall-img wide-img"
+                style="background-image: url(assets/dog-photos/005.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/006.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/001.png)"
+              ></div>
+
+              <div
+                class="te-img-cover tall-img"
+                style="background-image: url(assets/dog-photos/004.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/002.png)"
+              ></div>
+              <div
+                class="te-img-cover tall-img"
+                style="background-image: url(assets/dog-photos/012.png)"
+              ></div>
+              <div
+                class="te-img-cover wide-img"
+                style="background-image: url(assets/dog-photos/009.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/013.png)"
+              ></div>
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/011.png)"
+              ></div>
+
+              <div
+                class="te-img-cover"
+                style="background-image: url(assets/dog-photos/010.png)"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="location-section">
+        <h1 class="py-5 text-center">Ubicación</h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.036195685997!2d-100.40583262454705!3d25.736316577367834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662971855d75f77%3A0x9b73ce4da998da5d!2sArc%C3%A1ngeles%207738%2C%20Cumbres%20Providencia%2C%2064344%20Monterrey%2C%20N.L.!5e0!3m2!1sen!2smx!4v1689100892199!5m2!1sen!2smx"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <section id="reviews-section">
+        <h1 class="p-5 text-center">Reseñas</h1>
+        <div id="carouselExample" class="carousel slide pb-5">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="reviews-content">
+                  <div
+                    class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+                  >
+                    <img
+                      src="assets/happy-clients/Lea-client.png"
+                      class="reviews-owner-picture"
+                    />
+                    <div
+                      class="pt-3 pt-md-0 ps-0 ps-md-5 d-flex flex-column justify-content-center align-items-start"
+                    >
+                      <h2 class="text-center text-md-start">
+                        Lea Couto - Concha & Bolillo
+                      </h2>
+                      <p class="text-center text-md-start">
+                        Mil gracias por cuidar a nuestros perritos una vez más,
+                        con mucho cariño y respeto. Estamos encantados con el
+                        servicio pues nos permite viajar tranquilos.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="reviews-content">
+                  <div
+                    class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+                  >
+                    <img
+                      src="assets/happy-clients/Ollie-client.png"
+                      class="reviews-owner-picture"
+                    />
+                    <div
+                      class="pt-3 pt-md-0 ps-0 ps-md-5 d-flex flex-column justify-content-center align-items-start"
+                    >
+                      <h2 class="text-center text-md-start w-100">
+                        Francisco - Ollie
+                      </h2>
+                      <p class="text-center text-md-start">
+                        Reseña: me encanta dejar a Ollie en Pawhouse por ser un
+                        lugar limpio y acogedor para él aunado al cariñoso trato
+                        que recibe por parte de Neil. Esto hace que me sienta
+                        seguro de dejarlo en buenas manos cuando tengo que salir
+                        de viaje y no puede acompañarnos nuestro querido
+                        angelito peludo. Le encanta correr y jugar con nuevos
+                        amiguitos en un ambiente muy relajado. El hecho de que
+                        me mantengan al tanto de su estancia a través de fotos y
+                        videos me proporciona mucha tranquilidad. Gracias y
+                        felicidades
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="reviews-content">
+                  <div
+                    class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+                  >
+                    <img
+                      src="assets/happy-clients/Sylvia-client.png"
+                      class="reviews-owner-picture"
+                    />
+                    <div
+                      class="pt-3 pt-md-0 ps-0 ps-md-5 d-flex flex-column justify-content-center align-items-start"
+                    >
+                      <h2 class="text-center text-md-start w-100">
+                        Sylvia - Bono
+                      </h2>
+                      <p class="text-center text-md-start">
+                        Gracias al trato y hospitalidad de Pawhouse pasamos unas
+                        vacaciones sin remordimiento al dejar a Bono!
+                        <br />
+                        <br />
+
+                        Al recogerlo estaba feliz y en excelente estado
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <section id="footer" class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p
+          class="col-12 col-md-4 mb-0 d-flex d-md-block justify-content-center align-items-center"
+        >
+          © 2023 Pawhouse.mx
+        </p>
+
+        <a
+          href="pawhouse.mx"
+          class="p-4 p-md-0 col-12 col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <img src="assets/logo.png" />
+        </a>
+
+        <div
+          class="col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-end gap-2 gap-md-4"
+        >
+          <a href="#landing-section">INICO</a>
+          <a href="#story-section">PORQUE</a>
+          <a href="#photos-section">FOTOS</a>
+
+          <a href="#reviews-section">RESEÑAS</a>
+        </div>
+      </footer>
+    </section>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/utilities.js"></script>
+  </body>
+</html>
